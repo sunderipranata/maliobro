@@ -15,3 +15,8 @@ You can also compile and run the tile generator to create the world map.
 # To play without installing
 Just go to the project folder and run `test.exe`
 You can also generate the maps using tile generator from `/TILE GENERATOR/TILE GENERATOR.exe`
+
+
+brew install sdl
+brew install sdl_mixer
+brew install sdl_ttf

@@ -1,14 +1,14 @@
 //Include SDL functions and datatypes
 #include <iostream>
-#include <conio.h>
+// #include <conio.h>
 
 #define velx 10
 #define vely 16
 float score=0;
 float highscore=0;
-#include "SDL/SDL.h"
-#include "SDL/SDL_mixer.h"
-#include "SDL/SDL_ttf.h"
+#include "include/SDL/SDL.h"
+#include "include/SDL/SDL_mixer.h"
+#include "include/SDL/SDL_ttf.h"
 Mix_Music *bgm = NULL;
 Mix_Chunk *sfx[15] = {NULL,NULL,NULL,NULL,NULL,
                       NULL,NULL,NULL,NULL,NULL,
@@ -197,7 +197,8 @@ void game(SDL_Surface* &screen){
         if (bulletmax>0)updateBullets(screen);
         //UPDATE SCORE
         strcpy(buffer,"SCORE ");
-        itoa(score*100,temp,10);
+        
+        //itoa(score*100,temp,10);
         strcat(buffer, temp);
         message = TTF_RenderText_Solid( font, buffer, textColor );
         
@@ -315,7 +316,7 @@ int main(int argc, char *argv[])
         background(title,screen);
         //UPDATE SCORE
         strcpy(buffer,"HIGHSCORE - ");
-        itoa(highscore*100,temp,10);
+        //itoa(highscore*100,temp,10);
         strcat(buffer, temp);
         message = TTF_RenderText_Solid( font, buffer, textColor );
         SDL_BlitSurface(message, NULL, screen, &offset);    //print score

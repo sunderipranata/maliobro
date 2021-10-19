@@ -1,4 +1,5 @@
-#include "SDL/SDL.h"
+
+#include "include/SDL/SDL.h"
 #define SMALL_JUMP 128
 #define BIG_JUMP 160
 class Mario:public Character{

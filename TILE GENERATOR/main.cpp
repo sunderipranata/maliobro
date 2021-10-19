@@ -1,7 +1,7 @@
 #include <cstdlib>
 #include <iostream>
-#include "SDL/SDL.h"
-#include "SDL/SDL_mixer.h"
+#include "include/SDL/SDL.h"
+#include "include/SDL/SDL_mixer"
 #include "helper.h"
 #include "tiles.h"
 #include "helper2.h"
