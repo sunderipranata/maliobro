@@ -198,7 +198,7 @@ void game(SDL_Surface* &screen){
         //UPDATE SCORE
         strcpy(buffer,"SCORE ");
         
-        //itoa(score*100,temp,10);
+        SDL_itoa(score*100,temp,10);
         strcat(buffer, temp);
         message = TTF_RenderText_Solid( font, buffer, textColor );
         
@@ -316,7 +316,7 @@ int main(int argc, char *argv[])
         background(title,screen);
         //UPDATE SCORE
         strcpy(buffer,"HIGHSCORE - ");
-        //itoa(highscore*100,temp,10);
+        SDL_itoa(highscore*100,temp,10);
         strcat(buffer, temp);
         message = TTF_RenderText_Solid( font, buffer, textColor );
         SDL_BlitSurface(message, NULL, screen, &offset);    //print score
