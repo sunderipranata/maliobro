@@ -17,6 +17,11 @@ Just go to the project folder and run `test.exe`
 You can also generate the maps using tile generator from `/TILE GENERATOR/TILE GENERATOR.exe`
 
 
-brew install sdl
-brew install sdl_mixer
-brew install sdl_ttf
+    brew install sdl
+    brew install sdl_mixer
+    brew install sdl_ttf
+
+then copy the include & lib folder to the project folder
+
+compiling
+    g++ main.cpp -o play -I include -L lib -l SDL-1.2.0 -l SDL_mixer-1.2.0 -l SDL_ttf-2.0.0
