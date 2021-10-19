@@ -1,4 +1,5 @@
-#include "SDL/SDL.h"
+
+#include "include/SDL/SDL.h"
 //#include <iostream>
 void apply_cropped_surface(int posX, int posY,  int cropX, int cropY, SDL_Surface *image, SDL_Surface *screen){
     SDL_Rect crop;

@@ -1,4 +1,5 @@
-#include "SDL/SDL.h"
+
+#include "include/SDL/SDL.h"
 
 class Coin:public Character{
     private:
