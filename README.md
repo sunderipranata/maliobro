@@ -25,3 +25,6 @@ then copy the include & lib folder to the project folder
 
 compiling
     g++ main.cpp -o play -I include -L lib -l SDL-1.2.0 -l SDL_mixer-1.2.0 -l SDL_ttf-2.0.0
+
+
+guide: https://medium.com/@edkins.sarah/set-up-sdl2-on-your-mac-without-xcode-6b0c33b723f7
